@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{DC67CA56-0CE3-5B12-47C5-CA033625F391}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_0;UNITY_5_6;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>D:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>D:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\CarGenerator\OBJ-IO\Plugins\Extension\GameObjectExtension.cs" />
+     <Compile Include="Assets\CarGenerator\OBJ-IO\Plugins\Extension\MeshExtension.cs" />
+     <Compile Include="Assets\CarGenerator\OBJ-IO\Plugins\Extension\StringExtensions.cs" />
+     <Compile Include="Assets\CarGenerator\OBJ-IO\Plugins\Extension\Texture2DExtension.cs" />
+     <Compile Include="Assets\CarGenerator\OBJ-IO\Plugins\Extension\TransformExtension.cs" />
+     <Compile Include="Assets\CarGenerator\OBJ-IO\Plugins\Extension\UnityExtension.cs" />
+     <Compile Include="Assets\CarGenerator\OBJ-IO\Plugins\Extension\VectorExtension.cs" />
+     <Compile Include="Assets\CarGenerator\OBJ-IO\Plugins\Mesh\OBJ\OBJData.cs" />
+     <Compile Include="Assets\CarGenerator\OBJ-IO\Plugins\Mesh\OBJ\OBJFace.cs" />
+     <Compile Include="Assets\CarGenerator\OBJ-IO\Plugins\Mesh\OBJ\OBJFaceVertex.cs" />
+     <Compile Include="Assets\CarGenerator\OBJ-IO\Plugins\Mesh\OBJ\OBJGroup.cs" />
+     <Compile Include="Assets\CarGenerator\OBJ-IO\Plugins\Mesh\OBJ\OBJLoader.cs" />
+     <Compile Include="Assets\CarGenerator\OBJ-IO\Plugins\Mesh\OBJ\OBJMaterial.cs" />
+     <Compile Include="Assets\CarGenerator\OBJ-IO\Plugins\Utils\Int32Converter.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Backface.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Basic\CarGenerator0Grill.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Basic\CarGenerator1GrillToBonnet.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Basic\CarGenerator2Bonnet.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Basic\CarGenerator3BonnetToWindscreen.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Basic\CarGenerator4Windscreen.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Basic\CarGenerator5Roof.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Basic\CarGenerator6RearWindow.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Basic\CarGenerator7RearPanel.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Basic\CarGenerator8Backend.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Basic\SidePanel0.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Basic\SidePanel1.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Basic\SideWindow0.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Basic\SideWindow1.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Basic\SideWindow2.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Basic\SideWindow3.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Basic\Underside.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Classic\Classic1FrontBumper.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Classic\Classic2InwardFrontBumper.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Classic\Classic3UpwardFrontBumper.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Classic\Classic4BonnetPartA.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Classic\Classic4BonnetPartB.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Classic\Classic5Windscreen.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Classic\Classic6RearBody.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Classic\Classic7RearTop.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Classic\Classic8RearBottom.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Classic\Classic9Bottom.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Classic\ClassicSidePanel0.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Classic\ClassicSidePanel1.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\CombineMeshes.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\CreateCar.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Explode.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\MouseOver.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\RandomControl.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\ReplicationCamera.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Seed.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\ShowOffModel.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Timer.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\UI.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Van\Van10RearEnd.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Van\Van11RearBumper.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Van\Van12RearBumperDown.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Van\Van13Underside.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Van\Van1BumperUnderside.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Van\Van2BumperStraight.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Van\Van3BumperInward.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Van\Van4Grill.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Van\Van5GrillSlant.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Van\Van6Bonnet.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Van\Van7Windscreen.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Van\Van8Roof.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Van\Van9RearSlant.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Van\VanSidePanel0.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Van\VanSidePanel1.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Van\VanSideWindow0.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Van\VanSideWindow1.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Van\VanUpperSidePanel0.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Van\VanUpperSidePanel1.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Wheel\Wheel0.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Wheel\Wheel1.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Wheel\Wheel2.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Wheel\Wheel3.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Window\FrontWindow.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Window\RearWindow.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Window\SideWindowA.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Window\SideWindowB.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Window\SideWindowC.cs" />
+     <Compile Include="Assets\CarGenerator\Scripts\Window\SideWindowD.cs" />
+     <None Include="Assets\CarGenerator\OBJ-IO\Readme.txt" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VR">
+ <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
